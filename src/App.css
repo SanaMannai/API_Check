@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  background: linear-gradient(#640b8c, #0f0223);
+  height: 100vh;
+  .list-name {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 9px;
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+  }
+}
+.loading {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+.all-user {
+  width: 100%;
+  padding: 4px;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .box {
+    background-color: #470fb9;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    h1,
+    h3,
+    h4,
+    h5 {
+      margin-bottom: 15px;
+      color: #fff;
+      span {
+        color: #f09c00;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
